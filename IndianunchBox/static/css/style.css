@@ -1,0 +1,52 @@
+body {
+font-family: 'Poppins', sans-serif;
+background: #f5e6d3;
+}
+
+/* Navbar */
+.custom-navbar {
+background: rgba(255,255,255,0.7);
+padding: 10px;
+}
+
+.brand-logo {
+font-family: 'Playfair Display', serif;
+font-size: 24px;
+color: #c94c4c;
+}
+
+/* Hero */
+.hero-title {
+font-size: 50px;
+color: #c94c4c;
+}
+
+/* Auth */
+.auth-container {
+display: flex;
+justify-content: center;
+align-items: center;
+height: 80vh;
+}
+
+.auth-box {
+background: rgba(255,255,255,0.8);
+padding: 30px;
+border-radius: 15px;
+width: 350px;
+}
+
+.auth-box input {
+width: 100%;
+padding: 10px;
+margin-top: 10px;
+border-radius: 10px;
+border: none;
+}
+
+/* Buttons */
+.btn-auth {
+background: #c94c4c;
+color: white;
+border-radius: 20px;
+}
