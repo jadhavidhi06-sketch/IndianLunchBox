@@ -9,6 +9,11 @@ background: rgba(255,255,255,0.7);
 padding: 10px;
 }
 
+.welcome-text {
+    font-weight: 500;
+    color: #444;
+}
+
 .brand-logo {
 font-family: 'Playfair Display', serif;
 font-size: 24px;

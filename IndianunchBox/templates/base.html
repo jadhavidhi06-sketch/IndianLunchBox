@@ -20,14 +20,24 @@
 ```
 {% include 'navbar.html' %}
 
-<div class="container mt-4">
-    {% block content %}
-    <div class="hero-section text-center">
-        <h1 class="hero-title">🍱 IndianLunchBox</h1>
-        <p class="hero-subtitle">Relive Your Food Memories ❤️</p>
-    </div>
-    {% endblock %}
+<div class="hero-section text-center">
+
+```
+{% if request.session.user_name %}
+    <h1 class="hero-title">
+        Welcome back, {{ request.session.user_name }} ❤️
+    </h1>
+    <p class="hero-subtitle">
+        Ready to relive your lunchbox memories?
+    </p>
+{% else %}
+    <h1 class="hero-title">🍱 IndianLunchBox</h1>
+    <p class="hero-subtitle">Relive Your Food Memories ❤️</p>
+{% endif %}
+```
+
 </div>
+
 ```
 
 </body>

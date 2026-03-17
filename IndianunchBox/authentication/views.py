@@ -9,8 +9,9 @@ def hash_password(password):
 from django.shortcuts import render
 
 def home(request):
+    if not request.session.get('user_id'):
+        return redirect('login')
     return render(request, 'base.html')
-
 
 # REGISTER
 def register_view(request):
@@ -43,3 +44,8 @@ def login_view(request):
             return redirect('home')
 
     return render(request, 'auth/login.html')
+    
+
+def logout_view(request):
+    request.session.flush()
+    return redirect('login')    
